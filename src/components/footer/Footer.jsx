@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import "./events.css"
+import "./footer.css"
 
-export default class Events extends Component {
+export default class Footer extends Component {
   render() {
     return (
       <div>

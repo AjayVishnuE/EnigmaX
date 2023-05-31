@@ -1,0 +1,38 @@
+.navbar{
+    height: 100px;
+    width:90%;
+    padding:0 5%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(173, 222, 206);
+    gap: 60%;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar > a > img{
+    height: 80px;
+}
+
+.navbar > a > p{
+    right:0;
+
+}
+
+@media (max-width:1200px) {
+    .navbar{
+        gap: 50%;
+    }
+}
+
+@media (max-width:700px) {
+    .navbar{
+        gap: 30%;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar{
+        gap: 10%;
+    }
+}
