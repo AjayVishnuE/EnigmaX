@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import "./events.css"
 
-export default class Events extends Component {
-  render() {
+const Events = () => {
     return (
-      <div>
-        
+      <div class="events">
+        <h1>Events at EnigmaX</h1>
+        <div class="event-div-container">
+          
+        </div>
       </div>
     )
-  }
 }
+
+
+export default Events

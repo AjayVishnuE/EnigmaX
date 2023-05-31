@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     background-color: rgb(173, 222, 206);
-    gap: 60%;
+    gap: 70%;
     position: fixed;
     z-index: 1;
 }
@@ -16,7 +16,8 @@
 
 .navbar > a > p{
     right:0;
-
+    font-size: larger;
+    font-weight: 600;
 }
 
 @media (max-width:1200px) {

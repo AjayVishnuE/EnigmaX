@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { countDownDate } from "./import";
+import "./timer.css"
 
 export default class Timer extends Component {
   render() {
