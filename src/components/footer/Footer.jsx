@@ -8,7 +8,7 @@ import facebook from '../../assets/logo-facebook.svg';
 export default class Footer extends Component {
   render() {
     return (
-      <div>
+      <div className='footer-container'>
       <div className='footer'>
         <div className="footer-left">
           <img className="footer-left-img" src={logodesk}/>
@@ -18,13 +18,13 @@ export default class Footer extends Component {
         </div>
         <div className="footer-right">
           <div className="footer-right-imgs">
-            <a href="https://www.instagram.com/csi_cce/" target="_blank">
+            <a href="https://www.instagram.com/pmi_cce/" target="_blank">
               <img src={instagram} alt=""/> 
             </a>
-            <a href="https://www.linkedin.com/in/csicce/" target="_blank">
+            <a href="https://www.linkedin.com/in/pmi-student-chapter-cce-712317279/" target="_blank">
               <img src={linkedin} alt=""/>
             </a>
-            <a href="" target="_blank">
+            <a href="mail:pmi@cce.edu.in" target="_blank">
               <img src={facebook} alt=""/>
             </a>
           </div>

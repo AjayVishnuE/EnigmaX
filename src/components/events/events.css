@@ -1,5 +1,15 @@
 .events{
-    padding: 0 10%;
+    margin: 0;
+    padding: 50px 10% 100px 10%;
+    height: fit-content;
+    background-image: url("../../assets/eventsbg.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .event-div-container{
@@ -12,9 +22,13 @@
     gap:25px;
 }
 
+.event-div > h3{
+    color:white;
+}
+
 .event-div{
     width: 280px;
-    background-color: rgb(236, 228, 228);
+    background-color: #7301CD;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,15 +36,29 @@
     padding: 15px;
     border-radius: 15px;
     box-shadow: 3px 3px rgb(214, 203, 203);
+    gap: 10px;
+}
+
+.button{
+    background-color: #7301CD;
+    border: none;
+    
 }
 
 .event-img{
-    width: 100%;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 15px;
 }
 
 .event-div > p {
     text-align: justify;
+}
+
+.register-button{
+    width: fit-content;
+    padding: 20PX 40PX;
+    border-radius: 15px;
+    background-color: #7301CD;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css';
-import {Spotlight, About, Events } from '../../components' ;
+import {Spotlight, About, Events, Communitypartners } from '../../components' ;
 
 function Home () {
   return (
