@@ -1,20 +1,15 @@
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar, Footer, Eventdetails, Ourteam } from './components';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
-import {Home} from "./containers"
+import {Home } from "./containers"
 
-function App() {
+const App = () =>  {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <div className='App'>
         <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/Eventdetails" element={<Eventdetails />} />
-          <Route path="/Ourteam" element={<Ourteam />} />
-        </Routes>
+        <Home/>
         <Footer/>
-      </BrowserRouter>
     </div>
   );
 }

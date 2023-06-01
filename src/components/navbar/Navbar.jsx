@@ -10,9 +10,9 @@ const Navbar = () => {
         <a href="">
           <img src={pmilogo} alt='pmi-logo'/>
         </a>
-        <Link to="/Ourteam" style={{textDecoration:"none", color:"black", cursor:"pointer"}} > 
+        <a href="" style={{textDecoration:"none", color:"black", cursor:"pointer"}} > 
             <p>Meet Our Team</p>
-        </Link>
+        </a>
       </div>
     )
 }

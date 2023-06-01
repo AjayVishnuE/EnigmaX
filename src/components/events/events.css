@@ -1,3 +1,36 @@
 .events{
     padding: 0 10%;
 }
+
+.event-div-container{
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+}
+
+.event-div{
+    width: 280px;
+    background-color: rgb(236, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 3px 3px rgb(214, 203, 203);
+}
+
+.event-img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.event-div > p {
+    text-align: justify;
+}

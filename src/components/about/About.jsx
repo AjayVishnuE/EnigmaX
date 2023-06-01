@@ -5,7 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about">
-        <h1>About EnigmatiX</h1>
+        <h1 style={{textAlign:"center",}}>About EnigmaX</h1>
         <div className="container">
             <div className="imgdiv">
 
