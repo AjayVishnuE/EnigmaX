@@ -4,6 +4,12 @@ import Event1 from "../../assets/Event1.jpg"
 import Event2 from "../../assets/Event2.jpg"
 import Event3 from "../../assets/Event3.jpg"
 import Event4 from "../../assets/Event4.jpg"
+import Eventdet1 from "../../assets/eventdet1.jpg"
+import Eventdet2 from "../../assets/eventdet2.jpg"
+import Eventdet3 from "../../assets/eventdet3.jpg"
+import Eventdet4 from "../../assets/eventdet4.jpg"
+
+
 
 
 const Events_enigmax = [
@@ -11,25 +17,25 @@ const Events_enigmax = [
       img:Event1,
       name:'Marketing Maverick',
       description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exerc',
-      text:'Faculty-in-charge'
+      imgdet:Eventdet1
   },
   {
       img:Event2,
       name:'Financial Fusion',
       description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exerc',
-      text:'Faculty-in-charge'
+      imgdet:Eventdet2
   },
   {
     img:Event3,
     name:'HR Hive',
     description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exerc',
-    text:'Faculty-in-charge'
+    imgdet:Eventdet3
   },
   {
       img:Event4,
       name:'Management Maestro',
       description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exerc',
-      text:'Faculty-in-charge'
+      imgdet:Eventdet4
   }
 ]
 

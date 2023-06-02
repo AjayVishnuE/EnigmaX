@@ -21,6 +21,7 @@
     width:fit-content;
 }
 
+
 .textdiv{
     width:fit-content;
     color: white;
@@ -36,4 +37,10 @@
         align-items: center;
         gap: 50px;
     }
+}
+
+@media (max-width:500px){
+.enigmax{
+    width: 300px;
+}
 }

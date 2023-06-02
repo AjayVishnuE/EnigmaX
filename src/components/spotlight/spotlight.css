@@ -24,10 +24,16 @@ h2{
     gap:30px;
 }
 
-.arrow{
+.arrowdiv{
     position: absolute;
+    margin: 0;
+    padding: 0;
     bottom: 50px;
     animation-name: bounce;
+    height: fit-content;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
 }
 
 @keyframes bounce { 
@@ -51,5 +57,12 @@ h2{
     }
     .mobile{
         display: block;
+    }
+    .enigmax{
+        width: 250px;
+    }
+    .arrow{
+        position: absolute;
+        animation-name: bounce;
     }
 }

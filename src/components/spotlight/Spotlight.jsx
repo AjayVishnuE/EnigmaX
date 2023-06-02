@@ -12,14 +12,17 @@ export default class Spotlight extends Component {
         <div className="sec1">
           <h2 className='desktop'>PMI Student Chapter from<br/>Christ College of Engineering presents</h2>
           <h2 className='mobile'>PMI CCE Presents</h2>
-            <img className='' src={enigmax}/>
-            <h2>South India's first management fest at an engineering college</h2>
+            <img className='enigmax' src={enigmax}/>
+            <h2>Unveiling Engineering and Management Excellence</h2>
             <h2>09 June 2023, at Christ College of Engineering</h2>
         </div>
         <Timer/>
-        <a href="#about">
-          <img className='arrow' src={arrow}/>
+        <a href="#about" >
+          <div className='arrowdiv'>
+              <img className='arrow' src={arrow}/>
+          </div>
         </a>
+
       </div>
     )
   }
