@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./footer.css";
-import logodesk from '../../assets/pmi-logo-nobg.svg';
+import logodesk from '../../assets/pmitwhitelogo.png';
 import instagram from '../../assets/logo-instagram.svg';
 import linkedin from '../../assets/logo-linkedin.svg';
 import facebook from '../../assets/logo-facebook.svg';
@@ -28,10 +28,10 @@ export default class Footer extends Component {
               <img src={facebook} alt=""/>
             </a>
           </div>
-          <a style={{color: '#183883', fontWeight:"semibold", fontSize:"large"}} href="cce.edu.in">cce.edu.in</a>
+          <a style={{color: 'white', fontWeight:"semibold", fontSize:"large"}} href="cce.edu.in">cce.edu.in</a>
         </div>
       </div>
-      <p style={{textAlign:"center", fontSize:"small", padding: 10}}>Copyright © PMI CCE 2023. All Rights Reserved.</p>
+      <p style={{color: 'white', textAlign:"center", fontSize:"small", paddingBottom:"5px"}}>Copyright © PMI CCE 2023. All Rights Reserved.</p>
     </div>
     )
   }

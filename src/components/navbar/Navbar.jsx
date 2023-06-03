@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./navbar.css"
-import pmilogo from "../../assets/pmi-logo-nobg.svg";
+import pmilogo from "../../assets/pmitwhitelogo.png";
 
 const Navbar = () => {
     return (
@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="nav-header">
         <div className="nav-title">
           <a href="">
-            <img className="nav-logo-desktop" src={pmilogo}/>
+            <img className="nav-logo" src={pmilogo}/>
           </a>
         </div>
       </div>

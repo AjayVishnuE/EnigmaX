@@ -42,26 +42,29 @@ const Events_enigmax = [
 
 const Events = () => {
     return (
-      <div id="events" className="events">
-        <h1 style={{ textAlign:"center", margin:"0"}}>Events at EnigmaX</h1>
-        <div className="event-div-container">
-        {
-          Events_enigmax.map((item) => {
-              return(
-                  <div className="event-div">
-                      <img className="event-img" src={item.img} alt=""/>
-                      <h3>{item.name}</h3>
-                      <button className='button' onClick={""}>Read more</button>
-                  </div>
-              )
-          })
-        }
-        </div>
-        <a href="https://forms.gle/4RB5MMRLXBa8GukQ6" target='_blank'>
-          <div className='register-button'> 
-              <p>REGISTER FOR THE EVENTS</p>
+      <div className='events-container'>
+        <div id="events" className="events">
+          <h1 style={{ textAlign:"center", margin:"0"}}>Events at EnigmaX</h1>
+          <div className="event-div-container">
+          {
+            Events_enigmax.map((item) => {
+                return(
+                    <div className="event-div">
+                        <img className="event-img" src={item.img} alt=""/>
+                        <h3>{item.name}</h3>
+                        <button className='button' onClick={""}>Read more</button>
+                    </div>
+                )
+            })
+          }
           </div>
-        </a>
+          <a href="https://forms.gle/4RB5MMRLXBa8GukQ6" target='_blank'>
+            <div className='register-button'> 
+                <p>REGISTER FOR THE EVENTS</p>
+            </div>
+          </a>
+        </div>
+        <Footer/>
       </div>
     )
 }

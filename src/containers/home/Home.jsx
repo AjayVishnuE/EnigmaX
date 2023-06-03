@@ -4,7 +4,7 @@ import {Spotlight, About, Events } from '../../components' ;
 
 function Home () {
   return (
-    <div>
+    <div className='homecontainer'>
       <Spotlight />
       <About />
       <Events />
