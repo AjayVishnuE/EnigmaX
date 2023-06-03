@@ -8,6 +8,7 @@ import Eventdet1 from "../../assets/eventdet1.jpg"
 import Eventdet2 from "../../assets/eventdet2.jpg"
 import Eventdet3 from "../../assets/eventdet3.jpg"
 import Eventdet4 from "../../assets/eventdet4.jpg"
+import Footer from '../footer/Footer'
 
 
 
@@ -41,9 +42,9 @@ const Events_enigmax = [
 
 const Events = () => {
     return (
-      <div class="events">
+      <div id="events" className="events">
         <h1 style={{ textAlign:"center", margin:"0"}}>Events at EnigmaX</h1>
-        <div class="event-div-container">
+        <div className="event-div-container">
         {
           Events_enigmax.map((item) => {
               return(

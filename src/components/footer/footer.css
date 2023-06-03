@@ -1,5 +1,8 @@
 .footer-container{
-  background-color: #c791f0;
+  background-color: transparent;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
 .footer{
