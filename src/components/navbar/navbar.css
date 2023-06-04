@@ -60,7 +60,7 @@
     display:none;
   }
 
-  @media (max-width:1200px) {
+  @media (max-width:900px) {
     .nav{
       height:80px;
       display: flex;
