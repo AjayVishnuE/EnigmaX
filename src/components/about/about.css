@@ -1,6 +1,6 @@
 .about{
     height: fit-content;
-    padding: 100px 10% 50px 10%;
+    padding: 100px 10% 40px 10%;
     background-color:white;
     background-image: url("../../assets/aboutbg.png");
     background-repeat:no-repeat;
@@ -28,6 +28,10 @@
     text-align: justify;
 }
 
+.para{
+    font-size: large;
+}
+
 @media (max-width:1200px){
     .container{
         padding:50px 0;
@@ -40,7 +44,10 @@
 }
 
 @media (max-width:500px){
-.enigmax{
-    width: 300px;
-}
+    .enigmax{
+        width: 300px;
+    }
+    .para{
+        font-size: medium;
+    }
 }

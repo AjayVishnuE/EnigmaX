@@ -11,7 +11,7 @@ import Rightslider from '../rightslider/Rightslider'
 export default class Spotlight extends Component {
   render() {
     return (
-      <div id="spotlight" className="spotlight">
+      <div id="Home" className="spotlight">
         <Navbar/>
         <Leftslider/>
         <Rightslider/>
@@ -23,7 +23,7 @@ export default class Spotlight extends Component {
             <h2 style={{color:"aqua", marginBottom:"30px",}}>09 June 2023, at Christ College of Engineering</h2>
         </div>
         <Timer/>
-        <a href="#about" >
+        <a href="#About" >
           <div className='arrowdiv'>
               <img className='arrow' src={arrow}/>
           </div>

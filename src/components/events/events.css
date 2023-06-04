@@ -4,51 +4,82 @@
     background-repeat:no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
 }
 
 .events{
     margin: 0;
-    padding: 0 0 50px 0;
+    padding: 0px 0 50px 0;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.event-div-container{
-    padding: 25px 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap:40px;
+.cards-overall::after,
+.cards-overall::before {
+  padding: 0;
+  box-sizing: border-box;
+}
+.cards-overall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  gap: 20px;
 }
 
-.event-div > h3{
-    color:white;
+.flip-card-container {
+  width: 300px;
+  height: 350px;
+  perspective: 1000px;
 }
 
-.event-div{
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 25px 0;
-    padding: 15px;
-    border-radius: 15px;
-    gap: 10px;
-    background: linear-gradient(#49006B, #200030,2);
-    box-shadow: 0 8px 32px 0 #200030;
-    backdrop-filter: blur( 10.5px );
-    -webkit-backdrop-filter: blur( 10.5px );
+.flip-card {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s .1s;
 }
 
-.button{
-    background-color: #7301CD;
-    border: none;
-    
+.flip-card-container:hover .flip-card,
+.flip-card-container:focus-within .flip-card {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#49006B, #200030,2);
+  box-shadow: 0 8px 32px 0 #200030;
+  backdrop-filter: blur( 10.5px );
+}
+
+.card-front {
+  transform: rotateY(0deg);
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  backface-visibility: hidden;
 }
 
 .event-img{
@@ -58,13 +89,100 @@
     border-radius: 15px;
 }
 
-.event-div > p {
-    text-align: justify;
+.event-imgdet{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.know-more{
+    display: none;
 }
 
 .register-button{
     width: fit-content;
     padding: 20PX 40PX;
     border-radius: 15px;
-    background-color: #7301CD;
+    background-color: #942fe1;
 }
+
+@media (max-width:500px) {
+    .know-more{
+        display: block;
+    }
+}
+/* 
+.event-div-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 10px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.card2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 10px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.card-front {
+  background: linear-gradient(#49006B, #200030,2);
+  box-shadow: 0 8px 32px 0 #200030;
+  backdrop-filter: blur( 10.5px );
+  position: absolute;
+
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-back {
+  padding: 20px;
+  position: absolute;
+  background: linear-gradient(#49006B, #200030,2);
+  box-shadow: 0 8px 32px 0 #200030;
+  backdrop-filter: blur( 10.5px );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+  color: #ffffff;
+  text-align: center;
+} */
+
+

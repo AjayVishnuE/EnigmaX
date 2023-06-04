@@ -21,9 +21,9 @@ const Navbar = () => {
         </label>
       </div>
       <div className="nav-links">
-        <a href="#spotlight">Home</a>
-        <a href="#about">About</a>
-        <a href="#events">Events</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Events">Events</a>
         <a href="https://forms.gle/4RB5MMRLXBa8GukQ6" target='_blank'>Register</a>
       </div>
     </div>

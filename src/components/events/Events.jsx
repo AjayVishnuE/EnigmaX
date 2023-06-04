@@ -17,49 +17,62 @@ const Events_enigmax = [
   {
       img:Event1,
       name:'Marketing Maverick',
-      description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exerc',
+      eventlink:"https://raw.githubusercontent.com/AjayVishnuE/EnigmaX/mainmain/src/assets/eventdet1.jpg",
       imgdet:Eventdet1
   },
   {
       img:Event2,
       name:'Financial Fusion',
-      description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exerc',
+      eventlink:"https://raw.githubusercontent.com/AjayVishnuE/EnigmaX/mainmain/src/assets/eventdet2.jpg",
       imgdet:Eventdet2
   },
   {
     img:Event3,
     name:'HR Hive',
-    description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exerc',
+    eventlink:"https://raw.githubusercontent.com/AjayVishnuE/EnigmaX/mainmain/src/assets/eventdet3.jpg",
     imgdet:Eventdet3
   },
   {
       img:Event4,
       name:'Management Maestro',
-      description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exerc',
+      eventlink:"https://raw.githubusercontent.com/AjayVishnuE/EnigmaX/mainmain/src/assets/eventdet4.jpg",
       imgdet:Eventdet4
   }
 ]
 
 const Events = () => {
     return (
-      <div className='events-container'>
-        <div id="events" className="events">
-          <h1 style={{ textAlign:"center", margin:"0"}}>Events at EnigmaX</h1>
-          <div className="event-div-container">
+      <div id="Events" className='events-container'>
+        <div  className="events">
+          <h1 style={{ textAlign:"center", margin:"0"}}>Events at Enigma X' 23</h1>
+          <div class="cards-overall">
           {
             Events_enigmax.map((item) => {
                 return(
-                    <div className="event-div">
-                        <img className="event-img" src={item.img} alt=""/>
-                        <h3>{item.name}</h3>
+                  <div class="flip-card-container" >
+                  <div class="flip-card">
+                    <div className="card-front">
+                          <img className='event-img' src={item.img} alt="" />
+                          <h3 style={{margin:"10px 0 0 0", color:"white"}}>{item.name}</h3>
+                          <p className='know-more' style={{color:"#FFD600"}}>Know more.</p>
                     </div>
+                    <div className="card-back">
+                          <a href={item.eventlink} target='_blank'>
+                            <img className='event-imgdet' src={item.imgdet} alt=""/>
+                          </a>
+                    </div>
+                  </div>
+                </div>
                 )
             })
-          }
+        }
+            
+
+            
           </div>
           <a href="https://forms.gle/4RB5MMRLXBa8GukQ6" target='_blank'>
             <div className='register-button'> 
-                <p style={{color:"white"}}>REGISTER FOR THE EVENTS</p>
+                <p style={{color:"white"}}>REGISTER FOR Enigma X' 23</p>
             </div>
           </a>
         </div>

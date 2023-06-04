@@ -3,7 +3,7 @@ import "./footer.css";
 import logodesk from '../../assets/pmitwhitelogo.png';
 import instagram from '../../assets/logo-instagram.svg';
 import linkedin from '../../assets/logo-linkedin.svg';
-import facebook from '../../assets/logo-facebook.svg';
+import gmail from '../../assets/logo-gmail.svg';
 
 export default class Footer extends Component {
   render() {
@@ -18,14 +18,14 @@ export default class Footer extends Component {
         </div>
         <div className="footer-right">
           <div className="footer-right-imgs">
-            <a href="https://www.instagram.com/pmi_cce/" target="_blank">
-              <img src={instagram} alt=""/> 
-            </a>
             <a href="https://www.linkedin.com/in/pmi-student-chapter-cce-712317279/" target="_blank">
-              <img src={linkedin} alt=""/>
+              <img style={{height:"25px", width:"25px"}} src={linkedin} alt=""/>
             </a>
-            <a href="mail:pmi@cce.edu.in" target="_blank">
-              <img src={facebook} alt=""/>
+            <a href="mailto:pmi.christ@cce.edu.in" target="_blank">
+              <img style={{height:"25px", width:"25px"}} src={gmail} alt=""/>
+            </a>
+            <a href="https://www.instagram.com/pmi_cce/" target="_blank">
+              <img style={{height:"25px", width:"25px"}} src={instagram} alt=""/> 
             </a>
           </div>
           <a style={{color: 'white', fontWeight:"semibold", fontSize:"large"}} href="cce.edu.in">cce.edu.in</a>
