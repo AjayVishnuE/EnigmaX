@@ -17,26 +17,26 @@ const Events_enigmax = [
   {
       img:Event1,
       name:'Marketing Maverick',
-      eventlink:"https://raw.githubusercontent.com/AjayVishnuE/EnigmaX/mainmain/src/assets/eventdet1.jpg",
+      eventlink:"https://iili.io/H4KucPa.jpg",
       imgdet:Eventdet1
   },
   {
       img:Event2,
       name:'Financial Fusion',
-      eventlink:"https://raw.githubusercontent.com/AjayVishnuE/EnigmaX/mainmain/src/assets/eventdet2.jpg",
+      eventlink:"https://iili.io/H4Ku1cv.jpg",
       imgdet:Eventdet2
   },
   {
     img:Event3,
     name:'HR Hive',
-    eventlink:"https://raw.githubusercontent.com/AjayVishnuE/EnigmaX/mainmain/src/assets/eventdet3.jpg",
+    eventlink:"https://iili.io/H4KuaMg.jpg",
     imgdet:Eventdet3
   },
   {
-      img:Event4,
-      name:'Management Maestro',
-      eventlink:"https://raw.githubusercontent.com/AjayVishnuE/EnigmaX/mainmain/src/assets/eventdet4.jpg",
-      imgdet:Eventdet4
+    img:Event4,
+    name:'Management Maestro',
+    eventlink:"https://iili.io/H4Ku0KJ.jpg",
+    imgdet:Eventdet4
   }
 ]
 

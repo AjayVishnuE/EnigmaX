@@ -7,7 +7,7 @@
 
 .left-slider {
 	background: transparent;
-	height: 30px;
+	height: 20px;
 	margin: 0;
 	overflow:hidden;
 	position: absolute;
@@ -17,7 +17,7 @@
 	&::before,
 	&::after {
 		content: "";
-		height: 30px;
+		height: 20px;
 		position: absolute;
 		width: 200px;
 		z-index: 2;
@@ -44,7 +44,7 @@
 	}
 	
 	.left-slide {
-		height: 30px;
+		height: 20px;
 	}
 }
 
