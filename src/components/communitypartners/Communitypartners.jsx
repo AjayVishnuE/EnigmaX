@@ -15,8 +15,9 @@ export default class Communitypartners extends Component {
         <div class="containers">
             <img className='ccelogo' src={ccelogo} alt="" />
             <img className='ieeelogo' src={ieeelogo} alt="" />
-            <img className='pmiccelogo' src={pmicce} alt="" />
             <img className='pmikerlogo' src={pmikerala} alt="" />
+            <img className='pmiccelogo' src={pmicce} alt="" />
+
         </div>
       </div>
     )

@@ -7,7 +7,6 @@
     top:0;
     padding-right: 40px;
     background: rgba( 127, 0, 227, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px );
     /*opacity: .5;*/  
@@ -94,15 +93,18 @@
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #183883;
+      border-top: 2px solid white;
     }
   
     .nav>.nav-links {
       position: absolute;
       display: block;
-      width: 250px;
+      width: 200px;
       max-height: 280px;
-      background-color: rgba(24, 56, 131, 0.9);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 6px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 20px );
+      -webkit-backdrop-filter: blur( 20px );
       transition: all 0.2s ease-in;
       overflow: hidden;
       top: 80px;
@@ -115,12 +117,14 @@
       display: block;
       width: 100%;
       color:black;
+      font-size: large;
+      font-weight: bold;
       padding: 20px 0 20px 30px;
     }
   
     .nav>.nav-links>a:hover {
-      color:#009743;
-    }
+        color: #FFD600;
+      }
     
     .nav>#nav-check:not(:checked)~.nav-links {
       height: 0px;
@@ -137,13 +141,10 @@
   }
 
   @media (max-width:500px){
-    .nav-logo-desktop{
-      display: none;
-    }
 
-    .nav-logo-mobileview{
+    .nav-logo{
       display: block;
-      height: 50px;
+      height: 60px;
       margin: 0px 0;
     }
   }

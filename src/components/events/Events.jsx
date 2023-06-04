@@ -52,7 +52,6 @@ const Events = () => {
                     <div className="event-div">
                         <img className="event-img" src={item.img} alt=""/>
                         <h3>{item.name}</h3>
-                        <button className='button' onClick={""}>Read more</button>
                     </div>
                 )
             })
@@ -60,7 +59,7 @@ const Events = () => {
           </div>
           <a href="https://forms.gle/4RB5MMRLXBa8GukQ6" target='_blank'>
             <div className='register-button'> 
-                <p>REGISTER FOR THE EVENTS</p>
+                <p style={{color:"white"}}>REGISTER FOR THE EVENTS</p>
             </div>
           </a>
         </div>

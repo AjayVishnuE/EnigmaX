@@ -9,7 +9,7 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
 }
 
 .ccelogo{
@@ -26,4 +26,11 @@ h1{
 
 .ieeelogo{
     height: 70px;
+}
+
+
+@media (max-width:500px) {
+    .pmiccelogo{
+        display: none;
+    }
 }

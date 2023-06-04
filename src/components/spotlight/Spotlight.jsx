@@ -4,6 +4,8 @@ import "./spotlight.css"
 import enigmax from "../../assets/ENIGMAX.svg" 
 import arrow from "../../assets/Arrow.jpg" 
 import Navbar from '../navbar/Navbar'
+import Leftslider from '../leftslider/Leftslider'
+import Rightslider from '../rightslider/Rightslider'
 
 
 export default class Spotlight extends Component {
@@ -11,6 +13,8 @@ export default class Spotlight extends Component {
     return (
       <div id="spotlight" className="spotlight">
         <Navbar/>
+        <Leftslider/>
+        <Rightslider/>
         <div className="sec1">
           <h2 className='desktop'>PMI Student Chapter from<br/>Christ College of Engineering presents</h2>
           <h2 className='mobile'>PMI CCE Presents</h2>

@@ -1,4 +1,5 @@
 .events-container{
+    padding: 100px 0 0 0;
     background-image: url("../../assets/eventsbg.png");
     background-repeat:no-repeat;
     background-position: center center;
@@ -7,7 +8,7 @@
 
 .events{
     margin: 0;
-    padding: 50px 0 50px 0;
+    padding: 0 0 50px 0;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap:25px;
+    gap:40px;
 }
 
 .event-div > h3{
@@ -31,15 +32,17 @@
 
 .event-div{
     width: 280px;
-    background-color: #7301CD;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 25px 0;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 3px 3px rgb(214, 203, 203);
     gap: 10px;
+    background: linear-gradient(#49006B, #200030,2);
+    box-shadow: 0 8px 32px 0 #200030;
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
 }
 
 .button{
